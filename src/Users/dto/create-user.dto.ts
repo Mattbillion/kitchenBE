@@ -12,4 +12,7 @@ export class CreateUserDto {
 
   @IsString()
   desc: string;
+
+  @IsString()
+  category: string;
 }

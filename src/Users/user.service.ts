@@ -16,6 +16,6 @@ export class UserService {
   }
 
   async findAll(): Promise<User[]> {
-    return await this.userModel.find().exec();
+    return await this.userModel.find().populate('category').exec();
   }
 }
